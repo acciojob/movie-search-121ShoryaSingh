@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './../styles/App.css';
 
-const api = '99eb9fd1';
+const api = '';
 
 const App = () => {
   const [movieData, setMovieData] = useState(null);
@@ -24,8 +24,6 @@ const App = () => {
         setLoading(false);
       });
   };
-
-  console.log(movieData);
   return (
     <div>
       <p>Search Movie</p>
