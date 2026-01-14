@@ -37,10 +37,11 @@ const App = () => {
         />
         <button>Search</button>
       </form>
+      {error && <p>{error}</p>}
       {movieData && (
-        <div>
+        <ul>
           {movieData.map((movie) => (
-            <div
+            <li
               key={movie.imdbID}
               className="movie-card"
             >
@@ -54,9 +55,9 @@ const App = () => {
               />
               <h3>{movie.Title}</h3>
               <p>Year: {movie.Year}</p>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </div>
   );
