@@ -37,7 +37,7 @@ const App = () => {
         />
         <button>Search</button>
       </form>
-      {error && <p>{error}</p>}
+      {error && <p className="error">{error}</p>}
       {movieData && (
         <ul>
           {movieData.map((movie) => (
